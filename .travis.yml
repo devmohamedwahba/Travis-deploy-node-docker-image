@@ -21,6 +21,7 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push mohamedwahba2020/simple-node
+  
 notifications:
   email:
     - devmohamedwahba@gmail.com
